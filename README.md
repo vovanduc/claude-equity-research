@@ -19,25 +19,45 @@ Professional equity research and trading analysis powered by Claude AI, deliveri
 
 ## Key Features
 
-### Core Analysis Framework
-- **Executive Summary**: Investment thesis with price target and 12-month timeframe
-- **Fundamental Analysis**: Revenue growth, margins, peer comparisons, and forward estimates
-- **Catalyst Analysis**: Near-term and medium-term market drivers with specific dates
-- **Valuation Models**: Bull/base/bear scenarios with probability weighting
-- **Risk Assessment**: Company-specific and macro risks with position sizing guidance (1-5%)
-- **Technical Context**: Support/resistance levels, momentum indicators, and volume analysis
+### 📊 Equity Research & Analysis
+- **Institutional-Grade Reports**: `/trading-ideas` generates professional research with BUY/SELL/HOLD recommendations
+- **Comprehensive Framework**: 8-section analysis including fundamentals, catalysts, valuation, and risk assessment
+- **Real-Time Intelligence**: Live market data, earnings reports, analyst coverage, and insider activity
+- **Advanced Metrics**: Options flow, sector positioning, technical indicators, and ESG scores
 
-### Enhanced Intelligence Features
-- **Options Flow Analysis**: Unusual activity, put/call ratios, implied volatility trends
-- **Insider Activity Monitoring**: Executive buying/selling patterns with dollar amounts
-- **Sector Positioning**: Rotation trends and relative strength vs market indices
-- **ESG & Governance**: Sustainability scores and regulatory compliance assessment
+### 💼 Paper Trading Portfolio (NEW!)
+- **Simulated Trading**: Practice investing with $100,000 virtual capital
+- **Portfolio Tracking**: `/portfolio` shows positions, P&L, and performance metrics
+- **Realistic Execution**: `/paper-buy` and `/paper-sell` commands for full trading simulation
+- **Risk Management**: Position sizing warnings, allocation tracking, and stop-loss practice
+- **Transaction History**: Complete trade history with realized gains/losses
+- **Learn Risk-Free**: Build confidence and test strategies without real money
+
+### 🎓 Interactive Learning System (NEW!)
+- **Structured Curriculum**: 6 progressive modules from beginner to advanced
+- **Comprehensive Topics**:
+  - `/learn basics` - Stock market fundamentals (15 min)
+  - `/learn fundamentals` - Financial analysis & metrics (25 min)
+  - `/learn technical` - Chart patterns & indicators (20 min)
+  - `/learn valuation` - DCF, multiples, price targets (30 min)
+  - `/learn risk` - Risk management & position sizing (20 min) **← CRITICAL**
+  - `/learn portfolio` - Diversification & portfolio construction (25 min)
+- **Real Examples**: Every concept includes specific numbers and real company examples
+- **Practice Exercises**: Apply learning with `/trading-ideas` and paper trading
+
+### 📖 Financial Terminology Glossary (NEW!)
+- **50+ Key Terms**: `/glossary` provides instant definitions with examples
+- **Categorized by Topic**: Fundamental, technical, valuation, risk management, and trading terms
+- **Beginner-Friendly**: Clear explanations without jargon
+- **Integrated Learning**: Links to relevant `/learn` modules for deeper understanding
+- **Search by Term**: Look up P/E ratio, EBITDA, stop-loss, and more
 
 ### Professional Standards
 - **Institutional Terminology**: EBITDA, P/E ratios, EV/Sales, conviction levels
 - **Probability Weighting**: Bull/base/bear scenarios with percentage allocations
 - **Legal Protection**: Comprehensive disclaimers for educational use
 - **Data Sourcing**: Real-time web search with analyst firm citations
+- **Educational Focus**: Designed for learning and skill development
 
 ## Installation & Setup
 
@@ -118,29 +138,122 @@ cp commands/trading-ideas.md ~/.claude/commands/
 
 ## Usage Examples
 
-### Basic Equity Analysis
+### Complete Beginner Workflow (Start Here!)
+
+```bash
+# 1. Learn the basics
+/learn basics
+
+# 2. Research your first stock
+/trading-ideas AAPL
+
+# 3. Make your first paper trade
+/paper-buy AAPL 10
+
+# 4. Check your portfolio
+/portfolio
+
+# 5. Look up unfamiliar terms
+/glossary "P/E ratio"
+```
+
+### Equity Research & Analysis
+
+#### Basic Analysis
 ```bash
 /trading-ideas AAPL
 ```
 **Output**: Comprehensive institutional research report with BUY/SELL/HOLD recommendation
 
-### Technology Sector Analysis
+#### Technology Sector
 ```bash
 /trading-ideas NVDA
 ```
 **Features**: AI/semiconductor sector positioning, relative valuation vs peers
 
-### Financial Services Analysis
+#### Financial Services
 ```bash
 /trading-ideas JPM
 ```
 **Includes**: Interest rate sensitivity, regulatory environment, book value analysis
 
-### Growth Stock Analysis
+### Paper Trading Examples
+
+#### Building a Diversified Portfolio
 ```bash
-/trading-ideas TSLA
+# Research and buy tech stocks
+/trading-ideas AAPL
+/paper-buy AAPL 25
+
+/trading-ideas MSFT
+/paper-buy MSFT 10
+
+# Add healthcare diversification
+/trading-ideas JNJ
+/paper-buy JNJ 20
+
+# Check portfolio allocation
+/portfolio --detailed
 ```
-**Focus**: Growth metrics, competitive positioning, volatility assessment
+
+#### Taking Profits
+```bash
+# Stock is up 15%, time to take partial profits
+/paper-sell AAPL 10       # Sell 40% of position
+/portfolio                # Check remaining position
+```
+
+#### Practice Risk Management
+```bash
+# Stock hit your stop-loss level
+/paper-sell TSLA ALL      # Exit full position
+/learn risk              # Review risk management concepts
+```
+
+### Learning Path Examples
+
+#### For Complete Beginners
+```bash
+# Day 1: Learn fundamentals
+/learn basics
+/learn fundamentals
+
+# Day 2: Practice research
+/trading-ideas AAPL
+/trading-ideas MSFT
+/glossary "market cap"
+
+# Day 3: Start paper trading
+/paper-buy AAPL 10
+/portfolio
+```
+
+#### For Intermediate Investors
+```bash
+# Deep dive into analysis
+/learn technical
+/learn valuation
+
+# Apply to real stocks
+/trading-ideas NVDA      # Note technical levels and valuation
+/paper-buy NVDA 5        # Enter with risk management
+```
+
+### Glossary Usage Examples
+
+```bash
+# Browse all terms
+/glossary
+
+# Look up specific terms
+/glossary "P/E ratio"
+/glossary "EBITDA"
+/glossary "stop-loss"
+
+# Multi-word terms
+/glossary "risk-reward ratio"
+/glossary "free cash flow"
+```
 
 ## Sample Output Format
 
@@ -166,35 +279,75 @@ Probability weighting: 25%/55%/20%
 
 ## Command Reference
 
-| Command | Description | Output |
-|---------|-------------|---------|
-| `/trading-ideas <TICKER>` | Standard institutional analysis | 8-section comprehensive report |
-| `/trading-ideas <TICKER> --detailed` | Enhanced analysis with options flow | Extended technical and insider analysis |
-| `/trading-ideas --help` | Show usage information | Command documentation |
+### All Available Commands
+
+| Command | Description | Usage | Output |
+|---------|-------------|-------|--------|
+| **Equity Research** ||||
+| `/trading-ideas <TICKER>` | Institutional-grade equity analysis | `/trading-ideas AAPL` | 8-section comprehensive report with BUY/SELL/HOLD |
+| `/trading-ideas <TICKER> --detailed` | Enhanced analysis with options flow | `/trading-ideas NVDA --detailed` | Extended technical and insider analysis |
+| **Paper Trading** ||||
+| `/portfolio` | View portfolio summary | `/portfolio` | Positions, P&L, allocation |
+| `/portfolio --detailed` | Detailed portfolio view | `/portfolio --detailed` | Full breakdown with transactions |
+| `/paper-buy <TICKER> <SHARES>` | Buy stocks (simulated) | `/paper-buy AAPL 25` | Trade confirmation, updated position |
+| `/paper-buy <TICKER> <SHARES> <PRICE>` | Buy at specific price | `/paper-buy MSFT 10 380.50` | Trade execution with price control |
+| `/paper-sell <TICKER> <SHARES>` | Sell stocks (simulated) | `/paper-sell AAPL 10` | Realized P&L, remaining position |
+| `/paper-sell <TICKER> ALL` | Sell entire position | `/paper-sell TSLA ALL` | Position closed, total P&L |
+| **Learning System** ||||
+| `/learn` | Show learning path overview | `/learn` | 6 modules with descriptions |
+| `/learn basics` | Stock market fundamentals | `/learn basics` | 15-min beginner module |
+| `/learn fundamentals` | Financial analysis | `/learn fundamentals` | 25-min financial metrics module |
+| `/learn technical` | Technical analysis | `/learn technical` | 20-min chart patterns module |
+| `/learn valuation` | Valuation methods | `/learn valuation` | 30-min DCF and multiples |
+| `/learn risk` | Risk management ⚠️ CRITICAL | `/learn risk` | 20-min position sizing & stops |
+| `/learn portfolio` | Portfolio management | `/learn portfolio` | 25-min diversification |
+| **Glossary** ||||
+| `/glossary` | Browse all financial terms | `/glossary` | Categorized term list |
+| `/glossary <TERM>` | Look up specific term | `/glossary "P/E ratio"` | Definition with examples |
 
 ## Repository Structure
 
 ```
 claude-equity-research/
-├── README.md                     # This file
-├── LICENSE                       # MIT License
+├── .claude-plugin/
+│   └── marketplace.json          # Plugin marketplace definition (6 commands)
 ├── commands/
-│   ├── trading-ideas.md          # Main Claude Code command
+│   ├── trading-ideas.md          # Equity research analysis command
+│   ├── portfolio.md              # Portfolio viewing command
+│   ├── paper-buy.md              # Simulated buy orders
+│   ├── paper-sell.md             # Simulated sell orders
+│   ├── learn.md                  # Learning system command
+│   ├── glossary.md               # Financial terminology lookup
 │   └── README.md                 # Command documentation
-├── config/
-│   ├── config.example.json       # Template configuration
-│   └── prompts/                  # Analysis prompt templates
-├── examples/
-│   └── sample_reports/           # Example analyses (AAPL, HOOD, etc.)
 ├── docs/
-│   ├── methodology.md            # Detailed analysis framework
+│   ├── methodology.md            # Analysis framework
 │   ├── installation.md           # Setup instructions
-│   └── customization.md          # Customization guide
-├── utils/
-│   ├── data_sources.md           # Data source documentation
-│   └── validation.py             # Analysis validation tools
-└── tests/
-    └── test_command.py           # Command functionality tests
+│   ├── customization.md          # Customization guide
+│   ├── portfolio-guide.md        # Paper trading guide (NEW!)
+│   ├── glossary-terms.md         # Financial term definitions (NEW!)
+│   └── learning/                 # Learning modules (NEW!)
+│       ├── 01-basics.md          # Stock market fundamentals
+│       ├── 02-fundamentals.md    # Financial analysis
+│       ├── 03-technical.md       # Technical analysis
+│       ├── 04-valuation.md       # Valuation methods
+│       └── 05-risk.md            # Risk management ⚠️
+├── examples/
+│   ├── sample_reports/           # Example equity analyses
+│   │   ├── AAPL_analysis.md      # Apple BUY example
+│   │   └── HOOD_analysis.md      # Robinhood HOLD example
+│   └── sample_portfolio.json     # Example portfolio state (NEW!)
+├── config/
+│   └── config.example.json       # Template configuration
+├── README.md                     # This file
+├── PLUGIN.md                     # Plugin system documentation
+├── CLAUDE.md                     # Claude Code guidance
+├── LICENSE                       # MIT License
+└── SECURITY.md                   # Security policy
+
+User Data Storage (created on first use):
+~/.claude/equity-research/
+├── portfolio.json                # Current positions and cash
+└── transactions.json             # Complete trade history
 ```
 
 ## Analysis Methodology

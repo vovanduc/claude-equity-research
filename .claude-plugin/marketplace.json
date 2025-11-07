@@ -20,6 +20,61 @@
         "email": "quant.sentiment.ai@gmail.com"
       },
       "tags": ["finance", "equity-research", "trading", "stock-analysis", "investment", "fundamental-analysis", "technical-analysis", "ai-powered"]
+    },
+    {
+      "name": "portfolio",
+      "source": "./commands/portfolio.md",
+      "description": "View and manage your paper trading portfolio. Shows current positions, profit/loss, allocation percentages, and performance metrics. Perfect for tracking your simulated investments and learning portfolio management.",
+      "version": "1.0.0",
+      "author": {
+        "name": "quant-sentiment-ai",
+        "email": "quant.sentiment.ai@gmail.com"
+      },
+      "tags": ["portfolio", "paper-trading", "tracking", "positions", "performance", "learning"]
+    },
+    {
+      "name": "paper-buy",
+      "source": "./commands/paper-buy.md",
+      "description": "Execute simulated buy orders for stocks. Practice investment decisions without real money. Specify ticker, shares, and optional price. Integrates with /trading-ideas recommendations for educational trading practice.",
+      "version": "1.0.0",
+      "author": {
+        "name": "quant-sentiment-ai",
+        "email": "quant.sentiment.ai@gmail.com"
+      },
+      "tags": ["paper-trading", "buy", "simulated-trading", "practice", "learning"]
+    },
+    {
+      "name": "paper-sell",
+      "source": "./commands/paper-sell.md",
+      "description": "Execute simulated sell orders to close positions. Practice exit strategies, take profits, or cut losses in your paper portfolio. Tracks realized gains/losses and provides educational feedback on trading decisions.",
+      "version": "1.0.0",
+      "author": {
+        "name": "quant-sentiment-ai",
+        "email": "quant.sentiment.ai@gmail.com"
+      },
+      "tags": ["paper-trading", "sell", "simulated-trading", "practice", "learning"]
+    },
+    {
+      "name": "learn",
+      "source": "./commands/learn.md",
+      "description": "Interactive learning system for equity analysis. Access tutorials on fundamentals, technical analysis, valuation, and risk management. Beginner-friendly modules with examples and exercises to build investing knowledge progressively.",
+      "version": "1.0.0",
+      "author": {
+        "name": "quant-sentiment-ai",
+        "email": "quant.sentiment.ai@gmail.com"
+      },
+      "tags": ["education", "learning", "tutorial", "beginner", "training", "investing-basics"]
+    },
+    {
+      "name": "glossary",
+      "source": "./commands/glossary.md",
+      "description": "Financial terminology glossary with clear explanations. Look up terms like P/E ratio, EBITDA, market cap, beta, and more. Essential reference tool for understanding equity research reports and investment concepts.",
+      "version": "1.0.0",
+      "author": {
+        "name": "quant-sentiment-ai",
+        "email": "quant.sentiment.ai@gmail.com"
+      },
+      "tags": ["glossary", "terminology", "reference", "definitions", "learning", "education"]
     }
   ]
 }

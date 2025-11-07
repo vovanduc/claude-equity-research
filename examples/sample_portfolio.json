@@ -1,0 +1,45 @@
+{
+  "cash": 42750.00,
+  "initial_cash": 100000.00,
+  "positions": [
+    {
+      "ticker": "AAPL",
+      "company_name": "Apple Inc.",
+      "shares": 100,
+      "average_cost": 225.50,
+      "purchase_date": "2025-01-10",
+      "total_cost": 22550.00,
+      "last_updated": "2025-01-10"
+    },
+    {
+      "ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "shares": 50,
+      "average_cost": 382.00,
+      "purchase_date": "2025-01-12",
+      "total_cost": 19100.00,
+      "last_updated": "2025-01-12"
+    },
+    {
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "shares": 100,
+      "average_cost": 142.00,
+      "purchase_date": "2025-01-15",
+      "total_cost": 14200.00,
+      "last_updated": "2025-01-15"
+    },
+    {
+      "ticker": "JNJ",
+      "company_name": "Johnson & Johnson",
+      "shares": 20,
+      "average_cost": 162.00,
+      "purchase_date": "2025-01-18",
+      "total_cost": 3240.00,
+      "last_updated": "2025-01-18"
+    }
+  ],
+  "created": "2025-01-10",
+  "last_updated": "2025-01-18",
+  "notes": "Diversified portfolio with tech (60%), healthcare (5.5%), and 42.75% cash reserve for opportunities"
+}
